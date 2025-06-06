@@ -1,0 +1,143 @@
+.header {
+  /* background: linear-gradient(to bottom, #333, #222, #111, black); */
+  background-color: var(--my-header-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  padding: 0 32px;
+  z-index: 5;
+  /* box-shadow: 1px 1px 44px 16px darkred; */
+}
+
+.sloganWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--my-header-text-color);
+}
+
+.title {
+  background: transparent;
+  border: none;
+  font-family: var(font-family);
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--my-header-text-color);
+}
+
+@media (max-width: 968px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
+}
+
+.controls {
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  color: var(--my-input-text-color);
+  font-family: "Courier New", Courier, monospace;
+  padding: 0 12px 0 24px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.errorMessage{
+  color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.searchIcon {
+  color:  var(--my-icon-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 0 8px 8px 0;
+  border: none;
+
+  :hover {
+    opacity: 0.5;
+    color: var(--my-icon-hover-color)
+  }
+}
+
+.favButton {
+  padding: 12px;
+  border: none;
+  /* background: transparent; */
+  background-color: var(--my-header-text-color);
+  font-size: 1.1rem;
+  border-radius: 8px;
+  color: var(--my-header-color);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+  max-width: 200px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.themeChange {
+  color:  var(--my-icon-color);
+  height: 36px;
+  width: 36px;
+  font-size: 24px;
+  border: none;
+  border-radius: 12px;
+
+  :hover {
+    opacity: 0.5;
+    color:  var(--my-icon-hover-color);
+  }
+}

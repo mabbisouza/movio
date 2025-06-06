@@ -1,0 +1,26 @@
+.fullContainer {
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.containerWrapper {
+  display: flex;
+  padding-top: 200px;
+  gap: 16px;
+  height: calc(100vh - 144px);
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;  
+  justify-content: center;
+  align-items: center;
+}
+
+.showImages {
+  display: flex;
+  width: fit-content;
+}
+
+.image {
+  object-fit: cover;
+  height: 300px;
+}

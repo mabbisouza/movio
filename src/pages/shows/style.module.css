@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  background-color: pink;
+  /* background: linear-gradient(to bottom, #333, #222, #111, black); */
+  width: 100%;
+  /* height: 100%; */
+  align-items: center;
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+.content {
+  background-color: var(--my-bg-color);
+  display: flex;
+  gap: 44px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 44px;
+  padding-bottom: 32px;
+}
+
+.swiperSlide {
+  width: 100px !important;
+  height: 500px !important;
+  /* display: none; */
+}
+
+.swiper {
+  /* overflow: unset !important; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 480px;
+}
+
+.swiper div[class*="swiper-wrapper"] {
+  height: fit-content !important;
+}
+
+.swiper div[class*="swiper-button-prev"],
+div[class*="swiper-button-next"] {
+  display: flex;
+  color: #fff;
+  background-color: darkred;
+  border-radius: 100%;
+  font-size: 1rem !important;
+  width: 24px !important;
+  height: 24px !important;
+  padding: 24px !important;
+
+  &::after{
+    font-size: 1.5rem;
+  }
+}
+
+.cardWrapper {
+  /* background-color: red; */
+  display: flex;
+  position: relative;
+  height: 420px !important;
+  padding: 0px 16px;
+  min-width: fit-content;
+  /* width: 300px !important; */
+  /* transition: var(--my-transition); */
+  /* width: 100vw; */
+  /* &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  } */
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  font-size: 44px;
+  color: var(--my-card-text-color);
+  background-color: var(--my-card-color);
+  /* box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.5); */
+  border: 4px solid var(--my-bg-color);
+  border-radius: 100%;
+  width: 72px;
+  height: 72px;
+  left: 4px;
+  top: -16px;
+}
+
+.carouselContainer {
+  display: flex;
+  height: 544px;
+  /* width: 100%; */
+  /* padding: 0 60px; */
+}
+
+.highlights {
+  /* color: white; */
+  color: var(--my-text-color);
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.navCard {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 1280px;
+}
+
+.button {
+  display: flex;
+  width: fit-content;
+  height: 24px;
+  border-radius: 8px;
+  /* border: 1px solid black; */
+  border: none;
+  align-items: center;
+  color: var(--my-button-text-color);
+  background-color: var(--my-button-color);
+  font-family: "Courier New", Courier, monospace;
+  padding: 16px 24px;
+  font-size: 16px;
+  transition: var(--my-transition);
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.navMovies {
+  color: var(--my-text-color);
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,66 @@
+.main {
+    align-items: center;
+    width: 100vw;
+}
+
+.container {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 80px;
+  padding-top: 144px;
+  max-width: 1280px;
+  gap: 16px;
+}
+
+.cardImage {
+  display: flex;
+  height: 478px;
+}
+
+.titleWrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.cardTitle {
+  display: flex;
+  font-size: 2.2rem;
+}
+
+.cardSummary {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  font-size: large;
+  height: 100%;
+}
+
+.cardInfo {
+  display: flex;
+  gap: 32px;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.favorited {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  color: darkred;
+  font-size: 1.8rem;
+  padding: 8px;
+  border: none;
+  max-height: 44px;
+}
